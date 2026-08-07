@@ -1197,11 +1197,11 @@ body {
 
     <div class="section">
       <div class="sec-hd"><span class="sec-icon">🎮</span><span class="sec-title">Le jeu</span><div class="sec-rule"></div></div>
-      <div class="rule rule-spaced"><span class="rb">◆</span><span><em>5 duos maximum</em> s'affrontent sur une grille de <em>5×5 cases</em>.</span></div>
+      <div class="rule rule-spaced"><span class="rb">◆</span><span><em>4 duos</em> s'affrontent sur une grille de <em>5×5 cases</em>.</span></div>
       <div class="rule rule-spaced"><span class="rb">◆</span><span>Chaque duo contrôle <em>1 pion unique</em>, qui apparaît sur une <em>case aléatoire</em> au début de la partie.</span></div>
       <div class="rule rule-spaced"><span class="rb">◆</span><span>Des points d'action (<em>PA ⚡</em>) sont distribués à chaque début de tour — voir <em>Tour &amp; Points d'action</em>.</span></div>
       <div class="rule rule-spaced"><span class="rb">◆</span><span>Des <em>anomalies</em> modifient régulièrement le plateau et les probabilités — elles durent <em>1 tour</em> et prennent effet <em>dès le début du tour</em>, à la fin des actions du tour précédent.</span></div>
-      <div class="rule rule-spaced"><span class="rb">◆</span><span>En plus des anomalies, des <em>modifications de plateau aléatoires</em> peuvent survenir et changer la configuration de la grille.</span></div>
+      <div class="rule rule-spaced"><span class="rb">◆</span><span>Lorsqu'une attaque retire un <em>cœur</em>, une case du plateau est <em>retirée définitivement du jeu</em>, tirée au hasard, dès le <em>tour suivant</em>.</span></div>
     </div>
 
 
@@ -1212,6 +1212,7 @@ body {
         <div style="position:absolute;top:-8px;left:13px;background:var(--page-bg);padding:0 8px;font-family:'Cinzel',serif;font-size:7.5px;letter-spacing:2px;color:var(--gold)">🗺️ COMMENT SE DÉPLACER</div>
         <div class="cr" style="color:var(--text)"><span style="color:var(--gold2);font-size:9px;margin-top:4px;flex-shrink:0">◆</span><span>Dépensez <em style="color:var(--gold2)">1 PA</em> pour se déplacer dans une des <em style="color:var(--gold2)">4 directions cardinales</em> (N, S, E, O).</span></div>
         <div class="cr" style="color:var(--text)"><span style="color:var(--gold2);font-size:9px;margin-top:4px;flex-shrink:0">◆</span><span>Aucune limite de déplacement par tour — tant qu'il reste des PA.</span></div>
+        <div class="cr" style="color:var(--text)"><span style="color:var(--gold2);font-size:9px;margin-top:4px;flex-shrink:0">◆</span><span>Dépensez <em style="color:var(--gold2)">3 PA</em> pour effectuer un <em style="color:var(--gold2)">saut en ligne droite</em> : vous atterrissez directement sur la case située à <em style="color:var(--gold2)">2 cases de distance devant vous</em>, sans passer par la case intermédiaire.</span></div>
         <div class="cr" style="color:var(--text);margin-bottom:0"><span style="color:var(--red);font-size:9px;margin-top:4px;flex-shrink:0">◆</span><span><span class="neg">Aucun déplacement en diagonale.</span></span></div>
       </div>
 
@@ -1273,6 +1274,7 @@ body {
     <div class="section">
       <div class="sec-hd"><span class="sec-icon">⚡</span><span class="sec-title">Tour &amp; Points d'action</span><div class="sec-rule"></div></div>
       <div class="rule rule-spaced"><span class="rb">◆</span><span>Le tour se déclenche <em>automatiquement toutes les 10 minutes</em>.</span></div>
+      <div class="rule rule-spaced"><span class="rb">◆</span><span>Le <em>maître du jeu</em> peut <em>bloquer le déclenchement automatique</em> des tours à tout moment (pour dormir, s'absenter ou travailler), et le réactiver quand il le souhaite.</span></div>
       <div class="rule rule-spaced"><span class="rb">◆</span><span>Chaque duo programme ses actions <em>à l'avance</em> — tout s'exécute en simultané, dans l'ordre des actions (Action 1 de tous les duos, puis Action 2, etc.).</span></div>
       <div class="rule rule-spaced"><span class="rb">◆</span><span>À chaque début de tour, chaque duo gagne <em>entre 0 et 5 PA</em> (moyenne : <em>3,5 PA</em>).</span></div>
       <div class="pa-table" style="grid-template-columns:1fr 1fr">
@@ -1449,13 +1451,13 @@ body {
             <div class="fc-tag">Brutal &amp; Sanguinaire</div>
           </div>
           <div class="fc-hearts">
-            <div class="fc-hearts-row"><svg viewBox="0 0 24 24" fill="#8ab0a0"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#8ab0a0"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="#8ab0a0" stroke-width="1.5"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
-            <div class="fc-hearts-label">2 / 3 cœurs</div>
+            <div class="fc-hearts-row"><svg viewBox="0 0 24 24" fill="#8ab0a0"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#8ab0a0"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#8ab0a0"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
+            <div class="fc-hearts-label">3 cœurs</div>
           </div>
         </div>
         <div class="fc-stats">
           <span class="stat-pill">Hit : 100%</span>
-          <span class="stat-pill">Dodge : 20%</span>
+          <span class="stat-pill">Dodge : 33%</span>
         </div>
         <div class="fc-divider"></div>
         <div class="fc-block-special">
@@ -1471,8 +1473,6 @@ body {
         <div class="fc-block fc-block-neg">
           <div class="fc-block-title">✦ Malus</div>
           <div class="fc-eff"><span class="fc-b neg-b">◆</span><span><span class="neg">Bonus désactivés</span></span></div>
-          <div class="fc-eff"><span class="fc-b neg-b">◆</span><span><span class="neg">-2 cœurs max</span> au départ</span></div>
-          <div class="fc-eff"><span class="fc-b neg-b">◆</span><span>Commence avec <span class="neg">2 cœurs</span></span></div>
         </div>
       </div>
 
@@ -1518,13 +1518,13 @@ body {
             <div class="fc-tag">Vitesse &amp; Attaque</div>
           </div>
           <div class="fc-hearts">
-            <div class="fc-hearts-row"><svg viewBox="0 0 24 24" fill="#5090d8"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#5090d8"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#5090d8"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#5090d8"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#5090d8"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
-            <div class="fc-hearts-label">5 cœurs</div>
+            <div class="fc-hearts-row"><svg viewBox="0 0 24 24" fill="#5090d8"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#5090d8"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#5090d8"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#5090d8"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
+            <div class="fc-hearts-label">4 cœurs</div>
           </div>
         </div>
         <div class="fc-stats">
-          <span class="stat-pill">Hit : 70%</span>
-          <span class="stat-pill">Dodge : 50%</span>
+          <span class="stat-pill">Hit : 50%</span>
+          <span class="stat-pill">Dodge : 60%</span>
         </div>
         <div class="fc-divider"></div>
         <div class="fc-block-special">
@@ -1534,11 +1534,11 @@ body {
         </div>
         <div class="fc-block-special">
           <div class="fc-block-special-title">⚡ Bonus</div>
-          <div class="fc-special-desc">Chaque cœur retiré à un ennemi octroie <em>+5% de précision</em> permanente.</div>
+          <div class="fc-special-desc">Chaque cœur retiré à un ennemi octroie <em>+10% de précision</em> permanente.</div>
         </div>
         <div class="fc-block fc-block-neg">
           <div class="fc-block-title">✦ Malus</div>
-          <div class="fc-eff"><span class="fc-b neg-b">◆</span><span>Perd <span class="neg">10% de dodge</span> à chaque cœur perdu</span></div>
+          <div class="fc-eff"><span class="fc-b neg-b">◆</span><span>Perd <span class="neg">20% de dodge</span> à chaque cœur perdu</span></div>
         </div>
       </div>
 
@@ -1551,12 +1551,12 @@ body {
             <div class="fc-tag">Défense &amp; Endurance</div>
           </div>
           <div class="fc-hearts">
-            <div class="fc-hearts-row"><svg viewBox="0 0 24 24" fill="#50b870"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#50b870"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#50b870"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#50b870"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#50b870"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
-            <div class="fc-hearts-label">5 cœurs</div>
+            <div class="fc-hearts-row"><svg viewBox="0 0 24 24" fill="#50b870"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#50b870"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#50b870"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#50b870"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#50b870"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><svg viewBox="0 0 24 24" fill="#50b870"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
+            <div class="fc-hearts-label">6 cœurs</div>
           </div>
         </div>
         <div class="fc-stats">
-          <span class="stat-pill">Hit : 33%</span>
+          <span class="stat-pill">Hit : 35%</span>
           <span class="stat-pill">Dodge : 50%</span>
         </div>
         <div class="fc-divider"></div>
